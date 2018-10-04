@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ericshenn.order">
+
+    <application
+        android:name="debug.OrderApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="debug.activity.DebugActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".orderlist.OrdrListActivity" />
+        <activity android:name=".orderdetail.OrderDetailActivity" />
+        <activity android:name=".logistics.LogisticsInfoActivity" />
+        <activity android:name=".addevaluate2.AddEvaluate2Activity" />
+        <activity
+            android:name=".addevaluate.AddEvaluateActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+    </application>
+
+</manifest>

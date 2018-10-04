@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_goodspic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/default_p" />
+
+    <TextView
+        android:id="@+id/tv_goodsprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        tool:text="￥260.00" />
+
+    <TextView
+        android:id="@+id/tv_goodsoldprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_goodsprice"
+        tool:text="￥260.00" />
+
+    <TextView
+        android:id="@+id/tv_goodscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_goodsoldprice"
+        tool:text="X 1" />
+
+    <TextView
+        android:id="@+id/tv_goodsname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/tv_goodsprice"
+        android:layout_toRightOf="@id/iv_goodspic"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:minLines="2"
+        tool:text="商品名称商品名称商品名称商品名称" />
+
+    <TextView
+        android:id="@+id/tv_goodsattr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_goodsname"
+        android:layout_below="@id/tv_goodsname"
+        tool:text="黑色" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_goodsattr"
+        android:layout_marginTop="10dp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/tv_mailehuanq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_unsolid_999999"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="卖了换钱"
+            android:textColor="@drawable/text_999999_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_unsolid_999999"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="申请售后"
+            android:textColor="@drawable/text_999999_selector" />
+
+    </LinearLayout>
+
+</RelativeLayout>

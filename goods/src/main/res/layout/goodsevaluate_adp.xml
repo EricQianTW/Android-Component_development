@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_userheader"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/default_p" />
+
+    <RelativeLayout
+        android:id="@+id/rl_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_userheader">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tool:text="用户名" />
+
+        <RatingBar
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_username" />
+
+        <TextView
+            android:id="@+id/tv_evaluatedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            tool:text="2018-12-12" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rl_userinfo"
+        android:layout_below="@id/rl_userinfo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_commentvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="2" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_commentpic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rl_userinfo"
+        android:layout_below="@id/ll_content">
+
+        <TextView
+            android:id="@+id/tv_goodsarr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            tool:text="金色，64GB" />
+
+        <TextView
+            android:id="@+id/tv_buydate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_goodsarr"
+            android:textSize="12sp"
+            tool:text="2018-12-11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="12sp"
+            android:drawablePadding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/tv_buydate"
+            android:drawableLeft="@drawable/icon_goodsevaluate"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

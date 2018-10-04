@@ -1,0 +1,1 @@
+include ':app', ':baselibrary', ':mine', ':adapter', ':login', ':order', ':test', ':album', ':goods', ':roomdb', ':dialogui', ':address', ':home'

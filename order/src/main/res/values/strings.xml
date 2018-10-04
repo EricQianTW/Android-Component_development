@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Order</string>
+
+    <string name="orderinfo_ordernum">订单编号: %1$s</string>
+    <string name="orderinfo_ordertime">下单时间: %1$s</string>
+    <string name="orderinfo_payway">支付方式: %1$s</string>
+    <string name="orderinfo_sendway">配送方式: %1$s</string>
+    <string name="orderinfo_sendtime">配送日期: %1$s</string>
+    <string name="orderinfo_actualamount">实付款: %1$s</string>
+
+    <string name="logisticsinfo_logisticsnum">快捷快递: %1$s</string>
+    <string name="logisticsinfo_phonenum">官方电话: %1$s</string>
+</resources>

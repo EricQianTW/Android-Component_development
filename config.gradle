@@ -1,0 +1,26 @@
+ext {
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            minSdkVersion    : 17,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "1.0.0",
+            applicationId    : "com.ericshenn.packagemode",
+            isModule         : true,
+            mineIsApp        : false,
+            loginIsApp       : false,
+            orderIsApp       : false,
+            goodsIsApp       : false,
+            homeIsApp       : false,
+            addressIsApp       : false,
+            testIsApp        : false,
+            baseLibraryIsApp : true,
+            isDebug          : "true",
+            scheme           : "\"xpai\""
+    ]
+    //依赖配置
+    dependencies = [
+            "supportVersion": "26.1.0"
+    ]
+}
